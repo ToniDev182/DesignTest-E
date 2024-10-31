@@ -1,0 +1,173 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.cabecera {
+    position: relative;
+    /* Permite posicionar elementos absolutamente dentro del contenedor */
+    width: 100%;
+    /* Asegura que el header ocupe el ancho completo */
+    height: 200px;
+    /* Ajusta la altura del header según tus necesidades */
+    overflow: hidden;
+    /* Oculta cualquier contenido que se desborde */
+}
+
+.cabecera .banner {
+    position: absolute;
+    /* Permite posicionar la imagen en el header */
+    top: 0;
+    /* Alinea la imagen en la parte superior */
+    left: 0;
+    /* Alinea la imagen a la izquierda */
+    width: 100%;
+    /* Ajusta el ancho al 100% del header */
+    height: 100%;
+    /* Ajusta la altura al 100% del header */
+    object-fit: cover;
+    /* Cubre el área del header sin distorsionar la imagen */
+    z-index: 1;
+    /* Asegura que la imagen de fondo esté detrás del texto y logo */
+}
+
+.cabecera .logo {
+    width: 60px;
+    /* Aumenta el tamaño del logo */
+    height: 60px;
+    /* Aumenta el tamaño del logo */
+    position: absolute;
+    /* Asegura que el logo se posicione sobre el banner */
+    top: 20px;
+    /* Ajusta la distancia desde la parte superior */
+    right: 20px;
+    /* Ajusta la distancia desde la derecha */
+    z-index: 2;
+    /* Asegura que el logo esté por encima del banner */
+    border-radius: 25px;
+    border: 2px solid #BF9043;
+}
+
+.cabecera p {
+    position: absolute;
+    /* Permite posicionar el texto sobre la imagen */
+    top: 20px;
+    /* Ajusta la distancia desde la parte superior */
+    left: 20px;
+    /* Ajusta la distancia desde la izquierda */
+    color: white;
+    /* Cambia el color del texto si es necesario */
+    z-index: 2;
+    /* Asegura que el texto esté sobre la imagen */
+}
+
+/* #FDA6C4 */
+nav {
+    background-color: #FDA6C4;
+    padding: 40px 15px;
+    justify-content: center;
+    display: flex;
+    gap: 20px;
+
+}
+
+nav #naBotton {
+    background-color: #CCA8FF;
+    border: none;
+    border-radius: 10px;
+    padding: 20px 15px;
+
+}
+
+main {
+    display: flex;
+}
+
+aside {
+    background-color: #CCA8FF;
+    justify-content: center;
+    /* alinea eje x  */
+    align-items: center;
+    /* justifica el texto */
+    text-align: justify;
+    border-radius: 25px;
+    margin: 50px;
+
+
+}
+
+aside img {
+    border-radius: 50px;
+    width: 300px;
+    height: 400px;
+    margin: 80px;
+}
+
+aside p {
+    padding: 20px;
+    max-width: 600px;
+    margin: 2cqw;
+
+}
+
+
+
+aside h3 {
+    text-align: center;
+    font-size: 30px;
+    margin: 20px;
+}
+
+#ImagenesCentrales {
+
+    justify-content: center;
+    /* Centra horizontalmente */
+    align-items: center;
+    /* Centra verticalmente */
+    margin: 50vh 0 0 0;
+    /* Asegura que los elementos se alineen en columna *
+    /* Ocupa el 100% del ancho */
+    height: auto;
+    /* Permite que la altura sea automática */
+}
+
+#ImagenesCentrales img {
+    border: 2px solid black;
+    border-radius: 40px;
+    margin: 10px;
+}
+
+footer {
+    background-color: #FDA6C4;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+    /* Espacio entre los contenedores */
+    padding: 50px;
+
+
+}
+
+
+.contendor-redes {
+    display: flex;
+    /* Utiliza flexbox para alinear las imágenes en una fila */
+    justify-content: center;
+    /* Centra las imágenes horizontalmente */
+    align-items: center;
+    /* Centra las imágenes verticalmente */
+    gap: 20px;
+    /* Espacio entre las imágenes */
+
+    padding-top: 200px;
+}
+
+.redes {
+    width: 40px;
+    /* Ajusta el tamaño de las imágenes */
+    height: auto;
+    /* Mantiene la proporción original */
+
+}
